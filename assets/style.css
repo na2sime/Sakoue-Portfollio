@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Couleur de fond pour toute la page*/
+body {
+    background-color: #1d1d1d;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+/*Couleur de fond pour la barre de navigation*/
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
+/*Style de la barre de navigation*/
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 2rem;
+}
+
+nav li:hover {
+    cursor: pointer;
+    color: #d8d8d8;
+}
+
+/*Style pour la section d'en-tête*/
+#home {
+    padding: 10rem;
+    text-align: center;
+}
+
+/*Style pour les titres*/
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+/*Style pour les paragraphes*/
+p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/*"À propos"*/
+#about {
+    padding: 10rem;
+}
+
+.about-text {
+    margin-bottom: 3rem;
+}
+
+#about h1 {
+    text-align: center;
+}
+
+/*"Mes projets"*/
+#project-holder {
+    padding: 10rem;
+}
+
+#project-holder h1 {
+    text-align: center;
+}
+
+#project-holder #projets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+}
+
+#projets .projet-card {
+    background-color: #333;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.062);
+    transition: 0.8s;
+    padding: 5px;
+}
+
+#projets .projet-card img {
+    width: 100%;
+    height: 300px;
+    border-radius: 25px 25px 0 0;
+    object-fit: cover;
+}
+
+#projets .cardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+#projets .projet-card:hover {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.062);
+    transform: translateX(-5px) translateY(6px) scale(1.02);
+    cursor: pointer;
+}
+
+/*"Contactez-moi"*/
+#contact-holder {
+    padding: 10rem;
+}
+
+#contact-holder h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 1rem;
+}
+
+input[type="text"], input[type="email"], textarea {
+    background-color: #3d3d3d;
+    border: none;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #d8d8d8;
+    color: #333;
+}
+
+footer p {
+    text-align: center;
+}
